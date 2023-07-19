@@ -275,7 +275,7 @@ class Scripts(scripts.Script):
 				if (os.path.exists(f"{base_dir}/{Unprompted.Config.template_directory}/pro/demoncrawl_avatar_generator_v0.0.2/main{Unprompted.Config.txt_format}")): is_open = False
 				else: is_open = True
 				
-				with gr.Accordion("🎉 Promo", open=is_open):
+				with gr.Accordion("🎉 Promo", open=is_open, visible=False):
 					plug = gr.HTML(label="plug",elem_id="promo",value=f'<a href="https://payhip.com/b/qLUX9" target="_blank"><img src="{get_local_file_dir()}/images/promo_box_demoncrawl_avatar_generator.png" style="float: left;width: 150px;margin-bottom:10px;"></a><h1 style="font-size: 20px;letter-spacing:0.015em;margin-top:10px;">NEW! The <strong>DemonCrawl Avatar Generator</strong> is out now.</h1><p style="margin:1em 0;">Create pixel art portraits in the style of the popular roguelite, DemonCrawl. Includes a custom Stable Diffusion model trained by the game\'s developer, as well as a custom GUI and the ability to randomize your prompts.</p><a href="https://payhip.com/b/qLUX9" target=_blank><button class="gr-button gr-button-lg gr-button-secondary" title="View premium assets for Unprompted">Learn More ➜</button></a>')
 
 				with gr.Accordion("🧙 Wizard", open=Unprompted.Config.ui.wizard_open):
